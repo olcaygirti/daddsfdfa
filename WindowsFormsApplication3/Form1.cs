@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApplication3
+namespace WindowsFormsApplication7
 {
     public partial class Form1 : Form
     {
@@ -17,9 +17,16 @@ namespace WindowsFormsApplication3
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text);
+            {
+        byte yas;
+        yas = Convert.ToByte(textBox1.Text);
+        if (yas > 17)
+{
+ MessageBox.Show("Ehliyet başvurusunda bulunabilirsiniz.");
+ }
         }
+        
     }
 }
